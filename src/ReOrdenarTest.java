@@ -14,6 +14,11 @@ public class ReOrdenarTest {
         assertEquals(0, ReOrdenar.ordenarDesc(-329432));
         assertEquals(7777, ReOrdenar.ordenarDesc(7777));
     }
+    @Test
+    public void test_extremos() {
+        assertEquals(0, ReOrdenar.ordenarDesc(0));
+        assertEquals(0, ReOrdenar.ordenarDesc(57-7));
+    }
     /*Existen más asserts:
      * assertTrue()/assertFalse()
      * assertNull()/assertNotNull()
